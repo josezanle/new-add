@@ -170,6 +170,66 @@ main {
   color: black;
 }
 
+.section2 .experiencia {
+  margin-top: .5em;
+}
+
+.section2 .experiencia p {
+  margin-top: -1px;
+}
+
+.section2 .idiomas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  line-height: .6em;
+}
+
+.section2 .skills {
+  width: 100%;
+  margin-bottom: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section2 .skills p {
+  border: 2px solid #ebebeb;
+  margin: 0 3px;
+  text-align: center;
+  border-radius: 1em;
+  padding-top: 3px;
+}
+
+.section2 .proyectos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: .5em;
+}
+
+.section2 .proyectos p {
+  padding: 0 9px;
+}
+
+.section2 .proyectos p:hover {
+  border-bottom: 1px solid grey;
+}
+
+.section2 .otras-experiencias {
+  width: 100%;
+  margin-top: 1em;
+}
+
 @media (max-width: 1000px) {
   body,
   main {

@@ -43,13 +43,17 @@ body {
 }
 
 main {
-    width: 35em;
-    height: 45em;
+    width: 100vw;
+    height: 100vh;
     //
     @include flex-center();
     flex-wrap: wrap;
     padding: 3em 1em;
     background: white;
+}
+
+a {
+    color: black;
 }
 
 // Esta seccion es la parte Izquierda del Curriculum, contiene mis datos personales.
@@ -115,49 +119,62 @@ main {
     padding: 1em;
     h4 {
         font-size: 1em;
-        padding-bottom: .2em;
+        padding-bottom: 3px;
         color: #1F6F8B;
     }
     hr {
         border: none;
         width: 1.3em;
         height: 3px;
+        margin-bottom: 5px;
         background: #1F6F8B;
     }
     p {
-        font-size: .7em;
+        font-size: .8em;
         margin-top: .5em;
         color: black;
     }
+    .me {
+        margin: .5em 0;
+    }
+    .educacion {
+        margin: .5em 0;
+    }
     .experiencia {
-        margin-top: .5em;
+        width: 100%;
+        margin: .5em 0;
         p {
             margin-top: -1px;
         }
+    }
+    .educacion {
+        margin: .5em 0;
     }
     .idiomas {
         width: 100%;
         display: flex;
         flex-flow: column;
         line-height: .6em;
+        margin: .5em 0;
     }
     .skills {
         width: 100%;
-        margin-bottom: .5em;
+        margin: .5em 0;
         display: flex;
         p {
             border: 2px solid #ebebeb;
             margin: 0 3px;
             text-align: center;
             border-radius: 1em;
-            padding-top: 3px;
+            padding-top: 5px;
+            width: 90px;
         }
     }
     .proyectos {
         width: 100%;
         display: flex;
         align-items: center;
-        margin-top: .5em;
+        margin: .5em 0;
         // 
         p {
             padding: 0 9px;
@@ -168,7 +185,7 @@ main {
     }
     .otras-experiencias {
         width: 100%;
-        margin-top: 1em;
+        margin: .5em 0;
     }
 }
 
@@ -189,14 +206,14 @@ main {
         align-items: flex-start;
         flex: 1;
         border-right: none;
-        padding: 0;
+        padding: 0 0 0 1em;
         margin-bottom: 1em;
         //
         h1 {
-            text-align-last: left;
+            text-align: left;
         }
         h5 {
-            text-align-last: left;
+            text-align: left;
         }
         hr {
             background: #000;
@@ -213,7 +230,7 @@ main {
     }
     .section2 {
         flex: 1;
-        padding: 0;
+        padding: 0 0 0 1em;
         //
         h4 {
             width: 100%;

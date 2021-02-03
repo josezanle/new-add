@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
-  font-family: 'montserrat', Helvetica, sans-serif;
+  font-family: "montserrat", Helvetica, sans-serif;
 }
 
 body {
@@ -19,13 +19,6 @@ body {
           align-items: center;
   width: 100vw;
   height: 100%;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(main.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(main.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 1em;
-  overflow-x: hidden;
 }
 
 main {
@@ -75,9 +68,9 @@ a {
 .section1 h1 {
   font-size: 3em;
   text-align: right;
-  line-height: .9em;
-  color: #1F6F8B;
-  margin-bottom: .1em;
+  line-height: 0.9em;
+  color: #1f6f8b;
+  margin-bottom: 0.1em;
 }
 
 .section1 h5 {
@@ -126,11 +119,11 @@ a {
   -webkit-box-flex: 9;
       -ms-flex: 9;
           flex: 9;
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: left;
   font-weight: 400;
   width: 100%;
-  padding-right: .5em;
+  padding-right: 0.5em;
 }
 
 .section2 {
@@ -158,7 +151,7 @@ a {
 .section2 h4 {
   font-size: 1em;
   padding-bottom: 3px;
-  color: #1F6F8B;
+  color: #1f6f8b;
 }
 
 .section2 hr {
@@ -166,26 +159,26 @@ a {
   width: 1.3em;
   height: 3px;
   margin-bottom: 5px;
-  background: #1F6F8B;
+  background: #1f6f8b;
 }
 
 .section2 p {
-  font-size: .8em;
-  margin-top: .5em;
+  font-size: 0.8em;
+  margin-top: 0.5em;
   color: black;
 }
 
 .section2 .me {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .section2 .educacion {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .section2 .experiencia {
   width: 100%;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .section2 .experiencia p {
@@ -193,7 +186,7 @@ a {
 }
 
 .section2 .educacion {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .section2 .idiomas {
@@ -205,13 +198,13 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  line-height: .6em;
-  margin: .5em 0;
+  line-height: 0.6em;
+  margin: 0.5em 0;
 }
 
 .section2 .skills {
   width: 100%;
-  margin: .5em 0;
+  margin: 0.5em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,7 +227,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .section2 .proyectos p {
@@ -245,9 +238,17 @@ a {
   border-bottom: 1px solid grey;
 }
 
+.section2 .pointer {
+  cursor: pointer;
+  padding-top: 7px;
+  font-weight: bold;
+  width: 4em;
+  border-bottom: 1px solid grey;
+}
+
 .section2 .otras-experiencias {
   width: 100%;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 @media (max-width: 1000px) {
@@ -311,7 +312,7 @@ a {
     width: 100%;
   }
   .section2 a {
-    font-size: .9em;
+    font-size: 0.9em;
     color: black;
   }
 }

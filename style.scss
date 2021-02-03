@@ -1,246 +1,247 @@
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin flex-left {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 @mixin flex-right {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 @mixin full-size {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 // ==========================================================
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'montserrat', Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "montserrat", Helvetica, sans-serif;
 }
 
 body {
-    @include flex-center();
-    width: 100vw;
-    height: 100%;
-    background-image: linear-gradient(to top, hsla(0, 0%, 0%, 0.600), hsla(0, 0%, 0%, 0.600)), url(main.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 1em;
-    overflow-x: hidden;
+  @include flex-center();
+  width: 100vw;
+  height: 100%;
 }
 
 main {
-    width: 100vw;
-    height: 100vh;
-    //
-    @include flex-center();
-    flex-wrap: wrap;
-    padding: 3em 1em;
-    background: white;
+  width: 100vw;
+  height: 100vh;
+  //
+  @include flex-center();
+  flex-wrap: wrap;
+  padding: 3em 1em;
+  background: white;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 // Esta seccion es la parte Izquierda del Curriculum, contiene mis datos personales.
 .section1 {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include full-size();
-    flex-flow: column;
-    padding: 1em;
-    //
-    // Jose Rios
-    h1 {
-        font-size: 3em;
-        text-align: right;
-        line-height: .9em;
-        color: #1F6F8B;
-        margin-bottom: .1em;
-    }
-    // Front-End Developer
-    h5 {
-        text-align: right;
-    }
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include full-size();
+  flex-flow: column;
+  padding: 1em;
+  //
+  // Jose Rios
+  h1 {
+    font-size: 3em;
+    text-align: right;
+    line-height: 0.9em;
+    color: #1f6f8b;
+    margin-bottom: 0.1em;
+  }
+  // Front-End Developer
+  h5 {
+    text-align: right;
+  }
 }
 
 // Este div...llamado left card...contiene toda la seccion izquierda
 .left-card {
-    width: 100%;
-    height: 10em;
-    border-radius: 1em;
-    @include flex-right();
-    flex-flow: column;
-    //
-    .span {
-        @include full-size();
-        display: flex;
-        a {
-            color: black;
-        }
-        i {
-            flex: 1;
-            text-align: center;
-        }
-        p {
-            flex: 9;
-            font-size: .8em;
-            text-align: left;
-            font-weight: 400;
-            width: 100%;
-            padding-right: .5em;
-        }
+  width: 100%;
+  height: 10em;
+  border-radius: 1em;
+  @include flex-right();
+  flex-flow: column;
+  //
+  .span {
+    @include full-size();
+    display: flex;
+    a {
+      color: black;
     }
+    i {
+      flex: 1;
+      text-align: center;
+    }
+    p {
+      flex: 9;
+      font-size: 0.8em;
+      text-align: left;
+      font-weight: 400;
+      width: 100%;
+      padding-right: 0.5em;
+    }
+  }
 }
 
 // =================================================================
 // Esta es la seccion Derecha, contiene About Me, Educacion, Idiomas, etc
 .section2 {
-    flex: 2;
-    @include flex-left();
-    @include full-size();
-    flex-flow: column;
-    padding: 1em;
-    h4 {
-        font-size: 1em;
-        padding-bottom: 3px;
-        color: #1F6F8B;
-    }
-    hr {
-        border: none;
-        width: 1.3em;
-        height: 3px;
-        margin-bottom: 5px;
-        background: #1F6F8B;
-    }
+  flex: 2;
+  @include flex-left();
+  @include full-size();
+  flex-flow: column;
+  padding: 1em;
+  h4 {
+    font-size: 1em;
+    padding-bottom: 3px;
+    color: #1f6f8b;
+  }
+  hr {
+    border: none;
+    width: 1.3em;
+    height: 3px;
+    margin-bottom: 5px;
+    background: #1f6f8b;
+  }
+  p {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    color: black;
+  }
+  .me {
+    margin: 0.5em 0;
+  }
+  .educacion {
+    margin: 0.5em 0;
+  }
+  .experiencia {
+    width: 100%;
+    margin: 0.5em 0;
     p {
-        font-size: .8em;
-        margin-top: .5em;
-        color: black;
+      margin-top: -1px;
     }
-    .me {
-        margin: .5em 0;
+  }
+  .educacion {
+    margin: 0.5em 0;
+  }
+  .idiomas {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    line-height: 0.6em;
+    margin: 0.5em 0;
+  }
+  .skills {
+    width: 100%;
+    margin: 0.5em 0;
+    display: flex;
+    p {
+      border: 2px solid #ebebeb;
+      margin: 0 3px;
+      text-align: center;
+      border-radius: 1em;
+      padding-top: 5px;
+      width: 90px;
     }
-    .educacion {
-        margin: .5em 0;
+  }
+  .proyectos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+    //
+    p {
+      padding: 0 9px;
+      &:hover {
+        border-bottom: 1px solid grey;
+      }
     }
-    .experiencia {
-        width: 100%;
-        margin: .5em 0;
-        p {
-            margin-top: -1px;
-        }
-    }
-    .educacion {
-        margin: .5em 0;
-    }
-    .idiomas {
-        width: 100%;
-        display: flex;
-        flex-flow: column;
-        line-height: .6em;
-        margin: .5em 0;
-    }
-    .skills {
-        width: 100%;
-        margin: .5em 0;
-        display: flex;
-        p {
-            border: 2px solid #ebebeb;
-            margin: 0 3px;
-            text-align: center;
-            border-radius: 1em;
-            padding-top: 5px;
-            width: 90px;
-        }
-    }
-    .proyectos {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin: .5em 0;
-        // 
-        p {
-            padding: 0 9px;
-            &:hover {
-                border-bottom: 1px solid grey;
-            }
-        }
-    }
-    .otras-experiencias {
-        width: 100%;
-        margin: .5em 0;
-    }
+  }
+  .pointer {
+    cursor: pointer;
+    padding-top: 7px;
+    font-weight: bold;
+    width: 4em;
+    border-bottom: 1px solid grey;
+  }
+  .otras-experiencias {
+    width: 100%;
+    margin: 0.5em 0;
+  }
 }
 
 // ==========================================================================================================
 //-----------------RESPONSIVE----------------------------
-@media(max-width:1000px) {
-    body,
-    main {
-        height: 100%;
+@media (max-width: 1000px) {
+  body,
+  main {
+    height: 100%;
+  }
+  main {
+    padding: 3em 1em;
+    flex-flow: column;
+  }
+  .section1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    border-right: none;
+    padding: 0 0 0 1em;
+    margin-bottom: 1em;
+    //
+    h1 {
+      text-align: left;
     }
-    main {
-        padding: 3em 1em;
-        flex-flow: column;
+    h5 {
+      text-align: left;
     }
-    .section1 {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex: 1;
-        border-right: none;
-        padding: 0 0 0 1em;
-        margin-bottom: 1em;
-        //
-        h1 {
-            text-align: left;
-        }
-        h5 {
-            text-align: left;
-        }
-        hr {
-            background: #000;
-        }
-        .left-card {
-            .span {
-                flex-flow: row-reverse;
-                p {
-                    padding-right: 0;
-                    padding-left: 1em;
-                }
-            }
-        }
+    hr {
+      background: #000;
     }
-    .section2 {
-        flex: 1;
-        padding: 0 0 0 1em;
-        //
-        h4 {
-            width: 100%;
-        }
+    .left-card {
+      .span {
+        flex-flow: row-reverse;
         p {
-            width: 100%;
+          padding-right: 0;
+          padding-left: 1em;
         }
-        a {
-            font-size: .9em;
-            color: black;
-        }
+      }
     }
+  }
+  .section2 {
+    flex: 1;
+    padding: 0 0 0 1em;
+    //
+    h4 {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+    }
+    a {
+      font-size: 0.9em;
+      color: black;
+    }
+  }
 }
